@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -171,18 +172,32 @@ h1, h2, h3, h4, h5, h6 {
           flex: 0 1 auto;
 }
 .header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px 15px;
 }
 .header__title {
+  font-family: "Lobster", cursive;
   text-align: center;
-  font-weight: 700;
   letter-spacing: 2px;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 15px;
+  border-radius: 10px;
   font-size: calc(25px + 5 * ((100vw - 320px) / 448));
 }
 
 .remain {
+  width: 100%;
   font-style: italic;
+  font-weight: 600;
   font-size: calc(18px + 6 * ((100vw - 320px) / 448));
   display: -webkit-box;
   display: -ms-flexbox;

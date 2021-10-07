@@ -2,6 +2,12 @@
   background-color: #effcff;
 }
 
+.header__title {
+  color: #4a22ff;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
 .info {
   background-color: #4a22ff;
   color: white;
