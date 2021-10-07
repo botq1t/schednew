@@ -13,6 +13,13 @@
 
 <body>
 	<div class="wrapper">
+		<section class="info">
+			<div class="info__countdown">До конца семестра: 102 д., 06:02:15</div>
+			<div class="info__week">Неделя №5 (СР)</div>
+			<div class="info__time">16:26:17</div>
+
+			<div class="info__toggler"></div>
+		</section>
 		<header class="header">
 			<div class="header__body">
 				<h1 class="header__title">Расписанька</h1>
@@ -20,24 +27,22 @@
 					<div class="remain__time">Пара №1</div>
 					<div class="remain__countdown">До конца: <span>01:05:20</span></div>
 				</section>
+
+
 			</div>
 		</header>
 
 		<main class="main">
 			<nav class="main__nav-v nav-v">
 				<section class="nav-v__body">
-					<div class="nav-v__extender">
-						<span></span>
-					</div>
-
 					<ul class="nav-v__content">
-						<il id="nav-v_schedule"><span class="icon-bells"></span>Расписание</il>
-						<il id="nav-v_hours"><span class="icon-clock"></span>Часы</il>
+						<il class="nav-v__tab" id="nav-v_schedule"><span class="icon-bells"></span></il>
+						<il class="nav-v__tab" id="nav-v_hours"><span class="icon-clock"></span></il>
 					</ul>
 
-					<div class="nav-v__settings">
-						<p id="nav-v_settings"><span class="icon-prefs"></span>Настройки</p>
-					</div>
+					<ul class="nav-v__settings">
+						<il class="nav-v__tab" id="nav-v_settings"><span class="icon-prefs"></span></il>
+					</ul>
 				</section>
 			</nav>
 
@@ -47,18 +52,18 @@
 		</main>
 
 		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<nav class="footer__nav-h nav-h">
-						<ul class="nav-h__body">
-							<il id="nav-h_117">У117</il>
-							<il id="nav-h_117">У217</il>
-						</ul>
-					</nav>
-				</div>
+			<div class="footer__body">
+				<nav class="footer__nav-h nav-h">
+					<ul class="nav-h__body">
+						<il class="nav-h__tab" id="nav-h_117">У117</il>
+						<il class="nav-h__tab" id="nav-h_117">У217</il>
+					</ul>
+				</nav>
 			</div>
 		</footer>
 	</div>
+
+	<script src="js/main.js"></script>
 </body>
 
 </html>
