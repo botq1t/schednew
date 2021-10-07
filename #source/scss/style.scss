@@ -163,7 +163,7 @@ $maxWidth: 768;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@include adaptiv-font(35, 25);
+		font-size: 30px;
 		width: 50px;
 	}
 
