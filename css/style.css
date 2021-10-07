@@ -146,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__title {
   font-family: "Lobster", cursive;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin: 0px 0px 10px 0px;
   padding: 5px 15px;
   border-radius: 10px;
@@ -197,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 .remain {
   width: 100%;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   font-size: calc(18px + 6 * ((100vw - 320px) / 448));
   display: -webkit-box;
   display: -ms-flexbox;
