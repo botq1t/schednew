@@ -1,0 +1,56 @@
+.wrapper {
+  background-color: #effcff;
+}
+
+.info {
+  background-color: #4a22ff;
+  color: white;
+  text-shadow: 0 0 3px black;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+.info__toggler {
+  background-color: #4a22ff;
+  color: white;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.info__toggler::before, .info__toggler::after {
+  background-color: #4a22ff;
+  background-color: white;
+}
+.info.active {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.nav-v {
+  background-color: #4a22ff;
+  -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.5);
+}
+.nav-v__body {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+.nav-v__tab.active {
+  background-color: #effcff;
+  color: #4a22ff;
+  text-shadow: 0 0 1px #4a22ff;
+}
+
+.footer {
+  background-color: #4a22ff;
+}
+
+.nav-h__tab {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+.nav-h__tab.active {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+  background-color: #effcff;
+  color: #4a22ff;
+  text-shadow: 0 0 1px #4a22ff;
+}
