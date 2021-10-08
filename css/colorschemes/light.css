@@ -77,6 +77,12 @@
   background-color: #4a22ff;
   color: white;
 }
+.day__title.current {
+  background-color: #13a000;
+}
+.day__title.next {
+  background-color: #c5840c;
+}
 
 .lesson_lection {
   background-color: rgba(0, 255, 0, 0.2);

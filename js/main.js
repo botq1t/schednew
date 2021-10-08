@@ -12,11 +12,13 @@ import { setInfoTime } from './modules/date.js';
 import { setInfoRemain } from './modules/date.js';
 import { setInfoWeekDay } from './modules/date.js';
 import { initParity } from './modules/date.js';
+import { initCurrentDay } from './modules/date.js';
 
 setInfoTime();
 setInfoRemain();
 setInfoWeekDay();
 initParity();
+initCurrentDay();
 
 $('.nav-v__tab').click(function () {
 	let id = $(this).attr('id');
@@ -52,10 +54,10 @@ $('.header__parity').click(function () {
 	changeParity(weekParity);
 });
 
-// $('.day__title').click(function () {
-// 	$('.day__body').css('display', 'none');
-// 	$(this).next().css('display', 'flex');
-// });
+$('.day__title').click(function () {
+	$('.day__body').css('display', 'none');
+	$(this).next().css('display', 'flex');
+});
 
 document.getElementById('nav-h_117').click();
 document.getElementById('nav-v_schedule').click();

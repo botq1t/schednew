@@ -491,12 +491,14 @@ export const lessons = {
 
 export const lessonTime = {
 	string: {
+		0: { 'begin': '00:00', 'end': '00:00' },
 		1: { 'begin': '08:00', 'end': '09:35' },
 		2: { 'begin': '09:50', 'end': '11:25' },
 		3: { 'begin': '11:40', 'end': '13:15' },
 		4: { 'begin': '14:00', 'end': '15:35' }
 	},
 	inSeconds: {
+		0: { 'begin': 0, 'end': 0 },
 		1: { 'begin': 28800, 'end': 34500 },
 		2: { 'begin': 35400, 'end': 41100 },
 		3: { 'begin': 42000, 'end': 47700 },
@@ -600,12 +602,14 @@ function addLesson(lesson, daySchedule) {
 
 
 
-function getLessonAmount(group, day) {
+export function getLessonAmount(group, day, parity) {
 	let lessonAmount = 0;
 	for (let j in lessons[group][day]) {
 		if (j == 'lessons') {
 			continue;
-		} else if (lessons[group][day][j].index > lessonAmount) {
+		} else if (lessons[group][day][j].index > lessonAmount
+			&&
+			(parity == lessons[group][day][j].parity || lessons[group][day][j].parity == 'both')) {
 			lessonAmount = lessons[group][day][j].index;
 		}
 	}

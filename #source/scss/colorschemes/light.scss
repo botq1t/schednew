@@ -89,6 +89,12 @@ $odd-color: rgb(208, 19, 255);
 	&__title {
 		background-color: $accent-color;
 		color: white;
+		&.current {
+			background-color: rgb(19, 160, 0);
+		}
+		&.next {
+			background-color: rgb(197, 132, 12);
+		}
 	}
 }
 

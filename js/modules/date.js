@@ -1,11 +1,13 @@
 import { remainEnd, weekCheck, semBegin, dayName } from './constants.js';
 import { setMainMaxHeight } from './init.js';
+import { lessonTime, getLessonAmount } from './schedule.js';
+
 
 export function getDate() {
 	let output = {}
 
 	output.date = new Date();
-	// output.date = new Date(1634041876000);
+	// output.date = new Date(1633774816000);
 	output.dayIndex = output.date.getDay();
 	output.timeInSeconds = (output.date.getHours() * 3600) + (output.date.getMinutes() * 60) + (output.date.getSeconds());
 	return output;
@@ -54,8 +56,8 @@ export function getWeekIndexParity() {
 	return { weekIndex, weekParity };
 }
 
-export function initParity(weekParity = getWeekIndexParity().weekParity) {
-	// let weekParity = getWeekIndexParity().weekParity;
+export function initParity() {
+	let weekParity = getWeekIndexParity().weekParity;
 
 	switch (weekParity) {
 		case 'even':
@@ -107,6 +109,38 @@ export function changeParity(weekParity) {
 	$('.header__parity').removeClass('header__parity_even');
 	$('.header__parity').addClass(`header__parity_${weekParity}`);
 }
+
+export function initCurrentDay() {
+	$('.day__title').removeClass('current');
+	$('.day__title').removeClass('next');
+
+	let nextDay = getDate().dayIndex + 1;
+	if (nextDay == 7) nextDay = 0;
+
+	if (getDate().timeInSeconds <= lessonTime.inSeconds[getLessonAmount(117, getDate().dayIndex, getWeekIndexParity().weekParity)].end) {
+		$('#nav-h_117-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__body').css('display', 'flex');
+	} else {
+		$('#nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-h_117-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-h_117-target').find(`.day_${nextDay}`).find('.day__body').css('display', 'flex');
+	}
+
+	if (getDate().timeInSeconds <= lessonTime.inSeconds[getLessonAmount(217, getDate().dayIndex, getWeekIndexParity().weekParity)].end) {
+		$('#nav-h_217-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__body').css('display', 'flex');
+	} else {
+		$('#nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-h_217-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-h_217-target').find(`.day_${nextDay}`).find('.day__body').css('display', 'flex');
+	}
+
+	let toRepeat = 86403 - getDate().timeInSeconds;
+	setTimeout(setInfoWeekDay, toRepeat);
+}
+
 
 function getWeekparity(weekIndex) {
 	if (weekIndex % 2 == 0) {

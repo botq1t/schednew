@@ -58,11 +58,13 @@ $maxWidth: 768;
 	}
 
 	&__parity {
+		width: 100%;
 		border-radius: 10px;
 		text-align: center;
 		padding: 5px 10px;
 		@include adaptiv-font(25, 25);
 		font-weight: 700;
+		transition: all 300ms ease 0s;
 	}
 }
 .remain {
@@ -85,6 +87,7 @@ $maxWidth: 768;
 
 .info {
 	@include adaptiv-font(22, 19);
+	text-align: center;
 	line-height: 24px;
 	display: flex;
 	flex-direction: column;
@@ -245,6 +248,7 @@ $maxWidth: 768;
 		margin: 0;
 	}
 	&__title {
+		position: relative;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
 		padding: 5px 0;
@@ -255,8 +259,8 @@ $maxWidth: 768;
 	}
 
 	&__body {
-		display: flex;
-		// display: none;
+		// display: flex;
+		display: none;
 		flex-direction: column;
 	}
 }
