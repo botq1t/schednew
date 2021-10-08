@@ -113,9 +113,9 @@
   }
 
   .header__title {
-    color: #440d0f;
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: #891a1e;
+    -webkit-box-shadow: 0 0 3px #891a1e;
+            box-shadow: 0 0 3px #891a1e;
   }
   .header__parity {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -124,35 +124,35 @@
     color: white;
   }
   .header__parity_even {
-    background-color: #ffee00;
+    background-color: #29524a;
   }
   .header__parity_odd {
-    background-color: #d013ff;
+    background-color: #351431;
   }
 
   .remain {
     color: white;
     text-shadow: 0 0 3px black;
-    background-color: #440d0f;
+    background-color: #891a1e;
     -webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
   }
 
   .info {
-    background-color: #440d0f;
+    background-color: #891a1e;
     color: white;
     text-shadow: 0 0 3px black;
     -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
   }
   .info__toggler {
-    background-color: #440d0f;
+    background-color: #891a1e;
     color: white;
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
   .info__toggler::before, .info__toggler::after {
-    background-color: #440d0f;
+    background-color: #891a1e;
     background-color: white;
   }
   .info.active {
@@ -161,7 +161,7 @@
   }
 
   .nav-v {
-    background-color: #440d0f;
+    background-color: #891a1e;
     -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.3);
             box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.3);
   }
@@ -171,8 +171,8 @@
   }
   .nav-v__tab.active {
     background-color: #191716;
-    color: #440d0f;
-    text-shadow: 0 0 1px #440d0f;
+    color: #891a1e;
+    text-shadow: 0 0 1px #891a1e;
   }
 
   .day {
@@ -180,28 +180,29 @@
             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
   }
   .day__title {
-    background-color: #440d0f;
+    background-color: #891a1e;
+    text-shadow: 0 0 2px black;
     color: white;
   }
   .day__title.current {
-    background-color: #ff6978;
+    background-color: #4d6a39;
   }
   .day__title.next {
-    background-color: #6d435a;
+    background-color: #303636;
   }
 
   .lesson_lection {
-    background-color: rgba(0, 255, 0, 0.2);
+    background-color: #161b33;
   }
   .lesson_practice {
-    background-color: rgba(255, 145, 0, 0.2);
+    background-color: #330a0b;
   }
   .lesson_none {
-    background-color: rgba(0, 255, 234, 0.2);
+    background-color: #4c5b61;
   }
 
   .footer {
-    background-color: #440d0f;
+    background-color: #891a1e;
   }
 
   .nav-h__tab {
@@ -212,7 +213,7 @@
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
     background-color: #191716;
-    color: #440d0f;
-    text-shadow: 0 0 1px #440d0f;
+    color: #891a1e;
+    text-shadow: 0 0 1px #891a1e;
   }
 }

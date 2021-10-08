@@ -130,13 +130,12 @@ $odd-color: rgb(143, 98, 217);
 	}
 }
 
-// $dark-accent-color: rgb(177, 4, 4);
-$dark-accent-color: #440d0f;
+$dark-accent-color: #891a1e;
 // $dark-bg-color: rgb(48, 48, 48);
 $dark-bg-color: #191716;
 
-$dark-even-color: rgb(255, 238, 0);
-$dark-odd-color: rgb(208, 19, 255);
+$dark-even-color: #29524a;
+$dark-odd-color: #351431;
 
 @media (prefers-color-scheme: dark) {
 	.wrapper {
@@ -148,7 +147,7 @@ $dark-odd-color: rgb(208, 19, 255);
 		&__title {
 			// background-color: $dark-bg-color;
 			color: $dark-accent-color;
-			box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0 3px $dark-accent-color;
 		}
 
 		&__parity {
@@ -217,31 +216,40 @@ $dark-odd-color: rgb(208, 19, 255);
 
 		&__title {
 			background-color: $dark-accent-color;
+			text-shadow: 0 0 2px black;
 			color: white;
 			&.current {
-				// background-color: rgb(19, 160, 0);
-				// background-color: rgb(91, 209, 215);
-				// background-color: #ea7070;
-				background-color: #ff6978;
+				// background-color: #ff6978;
+				background-color: #4d6a39;
+				// background-color: #84596b;
 			}
 			&.next {
 				// background-color: rgb(197, 132, 12);
-				background-color: #6d435a;
+				// background-color: #6d435a;
+				// background-color: #84596b;
+				// background-color: #94a187;
+				background-color: #303636;
 			}
 		}
 	}
 
 	.lesson {
 		&_lection {
-			background-color: rgba(0, 255, 0, 0.2);
+			// background-color: rgba(0, 255, 0, 0.2);
+			// background-color: #4c5b61;
+			background-color: #161b33;
 		}
 
 		&_practice {
-			background-color: rgba(255, 145, 0, 0.2);
+			// background-color: rgba(255, 145, 0, 0.2);
+			background-color: #330a0b;
 		}
 
 		&_none {
-			background-color: rgba(0, 255, 234, 0.2);
+			// background-color: rgba(0, 255, 234, 0.2);
+			// background-color: #004e64;
+			// background-color: #303636;
+			background-color: #4c5b61;
 			// background-color: #ea7070;
 		}
 	}
