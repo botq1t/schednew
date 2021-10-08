@@ -15,7 +15,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -24,7 +24,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПАП при ОВД',
 				'type': 'ПЗ',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Александров О.В.'
 			},
 			3: {
@@ -32,7 +32,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПП и ТОВД',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Дубовский А.В.'
 			},
 			4: {
@@ -40,7 +40,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ФРО на АЯ',
 				'type': 'ПЗ',
-				'auditory': '1305',
+				'location': '1305',
 				'teacher': 'Лазовский Г.Б.'
 			},
 
@@ -54,7 +54,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'ЭО',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Науменко А.И.'
 			},
 			2: {
@@ -62,7 +62,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'ЭО',
 				'type': 'ЛК',
-				'auditory': '3103',
+				'location': '3103',
 				'teacher': 'Науменко А.И.'
 			},
 
@@ -71,7 +71,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ЭО',
 				'type': 'ПЗ',
-				'auditory': '3209',
+				'location': '3209',
 				'teacher': 'Науменко А.И.'
 			},
 		},
@@ -84,7 +84,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ОПВД',
 				'type': 'ПЗ',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 
@@ -93,7 +93,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ФРО на АЯ',
 				'type': 'ПЗ',
-				'auditory': '1305',
+				'location': '1305',
 				'teacher': 'Лазовский Г.Б.'
 			},
 
@@ -102,7 +102,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПП и ТОВД',
 				'type': 'ПЗ',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Дубовский А.В.'
 			},
 		},
@@ -115,7 +115,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'МОМАН',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Барабан И.И.'
 			},
 
@@ -124,7 +124,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'АП и ПНК',
 				'type': 'ЛК',
-				'auditory': '3103',
+				'location': '3103',
 				'teacher': 'Пилипчук В.С.'
 			},
 			3: {
@@ -132,7 +132,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'ОПВД',
 				'type': 'ЛК',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 			4: {
@@ -140,7 +140,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'ОПВД',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Вишневский Р.А.'
 			},
 			5: {
@@ -148,7 +148,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПАП при ОВД',
 				'type': 'ЛК',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 
@@ -162,7 +162,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -171,7 +171,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'АП и ПНК',
 				'type': 'ПЗ',
-				'auditory': '3103',
+				'location': '3103',
 				'teacher': 'Пилипчук В.С.'
 			},
 			3: {
@@ -179,7 +179,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'МОМАН',
 				'type': 'ПЗ',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Барабан И.И.'
 			},
 			4: {
@@ -187,7 +187,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПП и ТОВД',
 				'type': 'ПЗ',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Дубовский А.В.'
 			},
 			5: {
@@ -195,7 +195,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ФРО на АЯ',
 				'type': 'ПЗ',
-				'auditory': '1305',
+				'location': '1305',
 				'teacher': 'Лазовский Г.Б.'
 			},
 
@@ -209,7 +209,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -218,7 +218,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -227,7 +227,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'АИП и ЧФ',
 				'type': 'ЛК',
-				'auditory': '3209',
+				'location': '3209',
 				'teacher': 'Худолей Е.В.'
 			},
 			4: {
@@ -235,7 +235,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'АИП и ЧФ',
 				'type': 'ПЗ',
-				'auditory': '3209',
+				'location': '3209',
 				'teacher': 'Худолей Е.В.'
 			},
 
@@ -255,7 +255,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -264,7 +264,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ФРО на АЯ',
 				'type': 'ПЗ',
-				'auditory': '1305, 1307',
+				'location': '1305, 1307',
 				'teacher': 'Лазовский Г.Б., Швайко Е. П.'
 			},
 			3: {
@@ -272,7 +272,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПП и ТОВД',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Дубовский А.В.'
 			},
 		},
@@ -285,7 +285,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'ЭО',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Науменко А.И.'
 			},
 			2: {
@@ -293,7 +293,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'ЭО',
 				'type': 'ЛК',
-				'auditory': '3103',
+				'location': '3103',
 				'teacher': 'Науменко А.И.'
 			},
 
@@ -302,7 +302,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ОПВД',
 				'type': 'ПЗ',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 			4: {
@@ -310,7 +310,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ЭО',
 				'type': 'ПЗ',
-				'auditory': '3209',
+				'location': '3209',
 				'teacher': 'Науменко А.И.'
 			},
 
@@ -324,7 +324,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -333,7 +333,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПП и ТОВД',
 				'type': 'ПЗ',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Дубовский А.В.'
 			},
 
@@ -342,7 +342,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПАП при ОВД',
 				'type': 'ПЗ',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Александров О.В.'
 			},
 			4: {
@@ -350,7 +350,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ФРО на АЯ',
 				'type': 'ПЗ',
-				'auditory': '1305, 1307',
+				'location': '1305, 1307',
 				'teacher': 'Лазовский Г.Б., Швайко Е. П.'
 			},
 		},
@@ -363,7 +363,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'МОМАН',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Барабан И.И.'
 			},
 
@@ -372,7 +372,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'АП и ПНК',
 				'type': 'ЛК',
-				'auditory': '3103',
+				'location': '3103',
 				'teacher': 'Пилипчук В.С.'
 			},
 			3: {
@@ -380,7 +380,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'ОПВД',
 				'type': 'ЛК',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 			4: {
@@ -388,7 +388,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'ОПВД',
 				'type': 'ЛК',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Вишневский Р.А.'
 			},
 			5: {
@@ -396,7 +396,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПАП при ОВД',
 				'type': 'ЛК',
-				'auditory': '3204',
+				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 
@@ -410,7 +410,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 
@@ -419,7 +419,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': 'МОМАН',
 				'type': 'ПЗ',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Барабан И.И.'
 			},
 			3: {
@@ -427,7 +427,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ФРО на АЯ',
 				'type': 'ПЗ',
-				'auditory': '1305, 1307',
+				'location': '1305, 1307',
 				'teacher': 'Лазовский Г.Б., Швайко Е. П.'
 			},
 			4: {
@@ -435,7 +435,7 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'АП и ПНК',
 				'type': 'ПЗ',
-				'auditory': '3103',
+				'location': '3103',
 				'teacher': 'Пилипчук В.С.'
 			},
 			5: {
@@ -443,7 +443,7 @@ export const lessons = {
 				'parity': 'even',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 			6: {
@@ -451,7 +451,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ПП и ТОВД',
 				'type': 'ПЗ',
-				'auditory': '3203',
+				'location': '3203',
 				'teacher': 'Дубовский А.В.'
 			},
 
@@ -465,7 +465,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': null,
 				'type': null,
-				'auditory': null,
+				'location': null,
 				'teacher': null
 			},
 			2: {
@@ -473,7 +473,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'АИП и ЧФ',
 				'type': 'ПЗ',
-				'auditory': '3209',
+				'location': '3209',
 				'teacher': 'Худолей Е.В.'
 			},
 			3: {
@@ -481,7 +481,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'АИП и ЧФ',
 				'type': 'ЛК',
-				'auditory': '3209',
+				'location': '3209',
 				'teacher': 'Худолей Е.В.'
 			},
 
@@ -552,20 +552,62 @@ function createDaySchedule(group, day, groupSchedule) {
 
 	let daySchedule = groupSchedule.children(`.day_${day}`);
 	daySchedule.append(`<h2 class="day__title">${dayName.full[day]}</h2>`);
+
+	if (!lessons[group][day].lessons) return;
+
 	daySchedule.append(`<main class="day__body"></main>`);
 	daySchedule = daySchedule.children('.day__body');
 
-	daySchedule.append(`<section class="day__lesson lesson lesson_${day}"></section>`);
-	let thisLesson = daySchedule.children(`.lesson_${day}`);
+	for (let j in lessons[group][day]) {
+		if (j == 'lessons') continue;
 
-	let lessonResult = fillCurrentLesson(thisLesson, group, day);
-
-	if (!lessonResult) daySchedule.remove();
+		addLesson(lessons[group][day][j], daySchedule);
+	}
 }
 
-function fillCurrentLesson(thisLesson, group, day) {
-	let daySchedule = lessons[group][day];
-	console.log(daySchedule);
-	if (!daySchedule.lessons) return false;
-	return true;
+function addLesson(lesson, daySchedule) {
+	daySchedule.append(`<section class="day__lesson lesson lesson_${lesson.index} lesson_${lesson.parity}"></section>`);
+
+	let lessonOutput = daySchedule.children().last();
+
+	lessonOutput.append(`
+	<div class="lesson__item lesson__time">
+		<div class="lesson__time-item lesson__begin">${lessonTime.string[lesson.index].begin}</div>
+		<div class="lesson__time-item lesson__end">${lessonTime.string[lesson.index].end}</div>
+	</div>
+	`);
+
+	if (lesson.name === null) {
+		lessonOutput.append(`<div class="lesson__item lesson__none">Ничего</div>`);
+		lessonOutput.addClass('lesson_none');
+		return;
+	}
+
+	lessonOutput.append(`<div class="lesson__item lesson__name">${lesson.name}</div>`);
+	lessonOutput.append(`<div class="lesson__item lesson__type">${lesson.type}</div>`);
+	lessonOutput.append(`<div class="lesson__item lesson__location">${lesson.location}</div>`);
+	lessonOutput.append(`<div class="lesson__item lesson__teacher">${lesson.teacher}</div>`);
+
+	switch (lesson.type) {
+		case 'ЛК':
+			lessonOutput.addClass('lesson_lection');
+			break;
+		case 'ПЗ':
+			lessonOutput.addClass('lesson_practice');
+			break;
+	}
+}
+
+
+
+function getLessonAmount(group, day) {
+	let lessonAmount = 0;
+	for (let j in lessons[group][day]) {
+		if (j == 'lessons') {
+			continue;
+		} else if (lessons[group][day][j].index > lessonAmount) {
+			lessonAmount = lessons[group][day][j].index;
+		}
+	}
+	return lessonAmount;
 }

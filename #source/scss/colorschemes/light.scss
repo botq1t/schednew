@@ -91,6 +91,20 @@ $odd-color: rgb(208, 19, 255);
 	}
 }
 
+.lesson {
+	&_lection {
+		background-color: rgba(0, 255, 0, 0.2);
+	}
+
+	&_practice {
+		background-color: rgba(255, 145, 0, 0.2);
+	}
+
+	&_none {
+		background-color: rgba(0, 255, 234, 0.2);
+	}
+}
+
 .footer {
 	background-color: $accent-color;
 }

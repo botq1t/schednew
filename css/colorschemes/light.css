@@ -78,6 +78,16 @@
   color: white;
 }
 
+.lesson_lection {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+.lesson_practice {
+  background-color: rgba(255, 145, 0, 0.2);
+}
+.lesson_none {
+  background-color: rgba(0, 255, 234, 0.2);
+}
+
 .footer {
   background-color: #4a22ff;
 }

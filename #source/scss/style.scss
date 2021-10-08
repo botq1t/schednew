@@ -273,6 +273,10 @@ $maxWidth: 768;
 		border-bottom-left-radius: 5px;
 	}
 
+	&__none {
+		grid-column: 2 / 6;
+	}
+
 	&_lection {
 	}
 
