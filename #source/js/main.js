@@ -55,8 +55,24 @@ $('.header__parity').click(function () {
 });
 
 $('.day__title').click(function () {
+	/*let group = $(this).parent().parent().attr('id');
+	group = group.split('_')[1];
+	console.log(group);
 	$('.day__body').css('display', 'none');
-	$(this).next().css('display', 'flex');
+	$(this).next().css('display', 'flex');*/
+
+	let cond = $(this).next().css('display');
+
+	switch (cond) {
+		case 'none':
+			$(this).next().slideDown(300, function () {
+				$(this).css('display', 'flex');
+			});
+			break;
+		case 'flex':
+			$(this).next().slideUp(300);
+			break;
+	}
 });
 
 document.getElementById('nav-h_117').click();
