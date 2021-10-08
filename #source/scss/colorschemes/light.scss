@@ -1,15 +1,15 @@
 $accent-color: rgb(74, 34, 255);
 $bg-color: rgb(239, 252, 255);
 
-$even-color: rgb(255, 238, 0);
+$even-color: rgb(218, 188, 18);
 $odd-color: rgb(208, 19, 255);
 
 .wrapper {
 	background-color: $bg-color;
-	&::before {
+	/*&::before {
 		background-color: rgba(208, 19, 255, 0.05);
 		// background-color: rgb(255, 238, 0, 0.05);
-	}
+	}*/
 }
 
 .header {
@@ -130,7 +130,7 @@ $dark-bg-color: rgb(48, 48, 48);
 $dark-even-color: rgb(255, 238, 0);
 $dark-odd-color: rgb(208, 19, 255);
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 	.wrapper {
 		background-color: $dark-bg-color;
 		&::before {
@@ -237,4 +237,4 @@ $dark-odd-color: rgb(208, 19, 255);
 			}
 		}
 	}
-}
+}*/

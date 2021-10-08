@@ -3,11 +3,20 @@
 import { setMainMaxHeight } from './modules/init.js';
 import { initSchedule } from './modules/schedule.js';
 
-
 setMainMaxHeight();
-
 initSchedule(117);
 initSchedule(217);
+
+// ! ================= Time ==========================
+import { setInfoTime } from './modules/date.js';
+import { setInfoRemain } from './modules/date.js';
+import { setInfoWeekDay } from './modules/date.js';
+import { initParity } from './modules/date.js';
+
+setInfoTime();
+setInfoRemain();
+setInfoWeekDay();
+initParity();
 
 $('.nav-v__tab').click(function () {
 	let id = $(this).attr('id');
@@ -21,7 +30,7 @@ $('.nav-v__tab').click(function () {
 
 $('.nav-h__tab').click(function () {
 	let id = $(this).attr('id');
-	console.log(id);
+	// console.log(id);
 
 	$('.nav-h__tab').removeClass('active');
 	$(this).addClass('active');
@@ -33,6 +42,14 @@ $('.nav-h__tab').click(function () {
 $('.info__toggler').click(function () {
 	$('.info__toggler').toggleClass('active');
 	$('.info').toggleClass('active');
+});
+
+import { changeParity } from './modules/date.js';
+
+$('.schedule__parity').click(function () {
+	let weekParity = $(this).attr('class');
+	weekParity = weekParity.split(' ')[1].split('__')[1].split('_')[1];
+	changeParity(weekParity);
 });
 
 // $('.day__title').click(function () {
