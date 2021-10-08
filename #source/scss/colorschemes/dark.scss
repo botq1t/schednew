@@ -1,0 +1,80 @@
+$accent-color: rgb(177, 4, 4);
+$bg-color: rgb(48, 48, 48);
+
+.wrapper {
+	background-color: $bg-color;
+	color: white;
+}
+
+.header {
+	&__title {
+		color: white;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.remain {
+	color: white;
+	text-shadow: 0 0 3px black;
+	background-color: $accent-color;
+	box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+	background-color: $accent-color;
+	color: white;
+	text-shadow: 0 0 3px black;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+	&__toggler {
+		background-color: $accent-color;
+		color: white;
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+		&::before,
+		&::after {
+			background-color: $accent-color;
+			background-color: white;
+		}
+	}
+
+	&.active {
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.nav-v {
+	background-color: $accent-color;
+	box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.5);
+	&__body {
+		color: white;
+		text-shadow: 0 0 2px black;
+	}
+
+	&__tab {
+		&.active {
+			background-color: $bg-color;
+			// border-top-left-radius: 5px;
+			// border-bottom-left-radius: 5px;
+			// color: rgb(43, 255, 0);
+			color: $accent-color;
+			text-shadow: 0 0 1px $accent-color;
+		}
+	}
+}
+.footer {
+	background-color: $accent-color;
+}
+
+.nav-h {
+	&__tab {
+		color: white;
+		text-shadow: 0 0 2px black;
+		&.active {
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+			background-color: $bg-color;
+			// color: rgb(43, 255, 0);
+			// text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+			color: $accent-color;
+			text-shadow: 0 0 1px $accent-color;
+		}
+	}
+}

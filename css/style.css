@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -146,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,9 +156,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -196,6 +203,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .remain {
+  padding: 5px 10px;
+  border-radius: 10px;
   width: 100%;
   font-style: italic;
   font-weight: 700;
@@ -296,8 +305,21 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   position: relative;
+  width: 100%;
 }
+.main__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  overflow: auto;
+  max-width: 798px;
+  margin: 0 auto;
+}
+
 .nav-v {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 8px;
 }
@@ -315,7 +337,11 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 30px;
-  width: 50px;
+}
+@media (max-width: 340px) {
+  .nav-v__body {
+    font-size: 20px;
+  }
 }
 .nav-v__content {
   width: 100%;
@@ -361,7 +387,101 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
+.schedule {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 15px;
+}
+.schedule__parity {
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 10px;
+  font-size: calc(25px + 0 * ((100vw - 320px) / 448));
+  font-weight: 700;
+}
+.schedule__group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.day {
+  margin: 0px 0px 15px 0px;
+  border-radius: 5px;
+}
+.day:last-child {
+  margin: 0;
+}
+.day__title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: calc(22px + 3 * ((100vw - 320px) / 448));
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.day__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lesson {
+  -webkit-box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 13% auto 8% 13% 32%;
+  grid-template-columns: 13% auto 8% 13% 32%;
+  grid-auto-flow: column;
+  grid-auto-rows: auto;
+}
+.lesson:last-child {
+  margin: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.lesson__item {
+  font-size: calc(13px + 5 * ((100vw - 320px) / 448));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 3px;
+}
+.lesson__time {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.lesson__begin {
+  margin: 0px 0px 3px 0px;
+}
 .footer {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;

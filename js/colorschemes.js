@@ -1,0 +1,1 @@
+"use strict";let settings={colorScheme:"light"};if(localStorage.schednew_settings=JSON.stringify(settings),localStorage.schednew_settings){let e=JSON.parse(localStorage.schednew_settings).colorScheme;$("head").append(`<link rel="stylesheet" href="css/colorschemes/${e}.css">`)}else $("head").append('<link rel="stylesheet" href="css/colorschemes/light.css">');
