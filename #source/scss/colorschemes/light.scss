@@ -18,6 +18,18 @@ $odd-color: rgb(208, 19, 255);
 		color: $accent-color;
 		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	}
+
+	&__parity {
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+		text-shadow: 0 0 2px black;
+		color: white;
+		&_even {
+			background-color: $even-color;
+		}
+		&_odd {
+			background-color: $odd-color;
+		}
+	}
 }
 
 .remain {
@@ -69,17 +81,6 @@ $odd-color: rgb(208, 19, 255);
 }
 
 .schedule {
-	&__parity {
-		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-		text-shadow: 0 0 2px black;
-		color: white;
-		&_even {
-			background-color: $even-color;
-		}
-		&_odd {
-			background-color: $odd-color;
-		}
-	}
 }
 
 .day {

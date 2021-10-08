@@ -11,6 +11,18 @@
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
+.header__parity {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 2px black;
+  color: white;
+}
+.header__parity_even {
+  background-color: #dabc12;
+}
+.header__parity_odd {
+  background-color: #d013ff;
+}
 
 .remain {
   color: white;
@@ -55,19 +67,6 @@
   background-color: #effcff;
   color: #4a22ff;
   text-shadow: 0 0 1px #4a22ff;
-}
-
-.schedule__parity {
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  text-shadow: 0 0 2px black;
-  color: white;
-}
-.schedule__parity_even {
-  background-color: #dabc12;
-}
-.schedule__parity_odd {
-  background-color: #d013ff;
 }
 
 .day {

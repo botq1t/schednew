@@ -1,4 +1,5 @@
 import { remainEnd, weekCheck, semBegin, dayName } from './constants.js';
+import { setMainMaxHeight } from './init.js';
 
 export function getDate() {
 	let output = {}
@@ -58,23 +59,23 @@ export function initParity(weekParity = getWeekIndexParity().weekParity) {
 
 	switch (weekParity) {
 		case 'even':
-			$('.schedule__parity').text('Чётная неделя');
+			$('.header__parity').text('Чётная неделя');
 			$('.lesson_even').css('display', 'grid');
 			$('.lesson_odd').css('display', 'none');
 			break;
 		case 'odd':
-			$('.schedule__parity').text('Нечётная неделя');
+			$('.header__parity').text('Нечётная неделя');
 			$('.lesson_odd').css('display', 'grid');
 			$('.lesson_even').css('display', 'none');
 			break;
 	}
 
-	$('.schedule__parity').removeClass('schedule__parity_odd');
-	$('.schedule__parity').removeClass('schedule__parity_even');
-	$('.schedule__parity').addClass(`schedule__parity_${weekParity}`);
+	$('.header__parity').removeClass('header__parity_odd');
+	$('.header__parity').removeClass('header__parity_even');
+	$('.header__parity').addClass(`header__parity_${weekParity}`);
 
 
-
+	setMainMaxHeight();
 	let toRepeat = 86403 - getDate().timeInSeconds;
 	setTimeout(setInfoWeekDay, toRepeat);
 }
@@ -91,20 +92,20 @@ export function changeParity(weekParity) {
 
 	switch (weekParity) {
 		case 'even':
-			$('.schedule__parity').text('Чётная неделя');
+			$('.header__parity').text('Чётная неделя');
 			$('.lesson_even').css('display', 'grid');
 			$('.lesson_odd').css('display', 'none');
 			break;
 		case 'odd':
-			$('.schedule__parity').text('Нечётная неделя');
+			$('.header__parity').text('Нечётная неделя');
 			$('.lesson_odd').css('display', 'grid');
 			$('.lesson_even').css('display', 'none');
 			break;
 	}
 
-	$('.schedule__parity').removeClass('schedule__parity_odd');
-	$('.schedule__parity').removeClass('schedule__parity_even');
-	$('.schedule__parity').addClass(`schedule__parity_${weekParity}`);
+	$('.header__parity').removeClass('header__parity_odd');
+	$('.header__parity').removeClass('header__parity_even');
+	$('.header__parity').addClass(`header__parity_${weekParity}`);
 }
 
 function getWeekparity(weekIndex) {

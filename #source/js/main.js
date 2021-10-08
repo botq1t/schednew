@@ -35,7 +35,7 @@ $('.nav-h__tab').click(function () {
 	$('.nav-h__tab').removeClass('active');
 	$(this).addClass('active');
 
-	$('.main__schedule').children().not('.schedule__parity').css('display', 'none');
+	$('.main__schedule').children().not('.header__parity').css('display', 'none');
 	$(`#${id}-target`).css('display', 'flex');
 });
 
@@ -46,7 +46,7 @@ $('.info__toggler').click(function () {
 
 import { changeParity } from './modules/date.js';
 
-$('.schedule__parity').click(function () {
+$('.header__parity').click(function () {
 	let weekParity = $(this).attr('class');
 	weekParity = weekParity.split(' ')[1].split('__')[1].split('_')[1];
 	changeParity(weekParity);

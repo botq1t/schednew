@@ -43,7 +43,7 @@ $maxWidth: 768;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 15px 15px;
+		padding: 15px 15px 15px;
 	}
 
 	&__title {
@@ -56,10 +56,19 @@ $maxWidth: 768;
 		border-radius: 10px;
 		@include adaptiv-font(30, 25);
 	}
+
+	&__parity {
+		border-radius: 10px;
+		text-align: center;
+		padding: 5px 10px;
+		@include adaptiv-font(25, 25);
+		font-weight: 700;
+	}
 }
 .remain {
 	padding: 5px 10px;
 	border-radius: 10px;
+	margin: 0px 0px 10px 0px;
 	width: 100%;
 	font-style: italic;
 	font-weight: 700;
@@ -221,15 +230,6 @@ $maxWidth: 768;
 	display: none;
 	flex-direction: column;
 	padding: 10px 15px;
-
-	&__parity {
-		border-radius: 10px;
-		text-align: center;
-		margin: 0px 0px 10px 0px;
-		padding: 5px 10px;
-		@include adaptiv-font(25, 25);
-		font-weight: 700;
-	}
 
 	&__group {
 		flex: 1 0 100%;
