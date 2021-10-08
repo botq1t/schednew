@@ -1,8 +1,9 @@
-$accent-color: rgb(74, 34, 255);
-$bg-color: rgb(239, 252, 255);
+$accent-color: rgb(17, 43, 102);
+$bg-color: #ebedec;
+// $bg-color: #dcdcdd;
 
-$even-color: rgb(218, 188, 18);
-$odd-color: rgb(208, 19, 255);
+$even-color: rgb(191, 152, 48);
+$odd-color: rgb(143, 98, 217);
 
 .wrapper {
 	background-color: $bg-color;
