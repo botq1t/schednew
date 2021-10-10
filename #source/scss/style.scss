@@ -58,6 +58,7 @@ $maxWidth: 768;
 	}
 
 	&__parity {
+		cursor: pointer;
 		width: 100%;
 		border-radius: 10px;
 		text-align: center;
@@ -213,6 +214,7 @@ $maxWidth: 768;
 	}
 
 	&__tab {
+		cursor: pointer;
 		padding: 5px;
 		width: 100%;
 		display: flex;
@@ -248,6 +250,7 @@ $maxWidth: 768;
 		margin: 0;
 	}
 	&__title {
+		cursor: pointer;
 		position: relative;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
@@ -446,6 +449,7 @@ $maxWidth: 768;
 	}
 
 	&__tab {
+		cursor: pointer;
 		font-weight: 700;
 		letter-spacing: 2px;
 		@include adaptiv-font(25, 22);

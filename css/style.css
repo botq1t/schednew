@@ -202,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: calc(25px + 5 * ((100vw - 320px) / 448));
 }
 .header__parity {
+  cursor: pointer;
   width: 100%;
   border-radius: 10px;
   text-align: center;
@@ -378,6 +379,7 @@ h1, h2, h3, h4, h5, h6 {
           flex: 0 1 auto;
 }
 .nav-v__tab {
+  cursor: pointer;
   padding: 5px;
   width: 100%;
   display: -webkit-box;
@@ -426,6 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .day__title {
+  cursor: pointer;
   position: relative;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -595,6 +598,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .nav-h__tab {
+  cursor: pointer;
   font-weight: 700;
   letter-spacing: 2px;
   font-size: calc(22px + 3 * ((100vw - 320px) / 448));
