@@ -120,23 +120,23 @@ export function initCurrentDay() {
 	if (nextDay == 7) nextDay = 0;
 
 	if (getDate().timeInSeconds <= lessonTime.inSeconds[getLessonAmount(117, getDate().dayIndex, getWeekIndexParity().weekParity)].end) {
-		$('#nav-h_117-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
-		$('#nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
-		$('#nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__body').css('display', 'flex');
+		$('#nav-v_schedule-target').find('.nav-h_117-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-v_schedule-target').find('.nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-v_schedule-target').find('.nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__body').css('display', 'flex');
 	} else {
-		$('#nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
-		$('#nav-h_117-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
-		$('#nav-h_117-target').find(`.day_${nextDay}`).find('.day__body').css('display', 'flex');
+		$('#nav-v_schedule-target').find('.nav-h_117-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-v_schedule-target').find('.nav-h_117-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-v_schedule-target').find('.nav-h_117-target').find(`.day_${nextDay}`).find('.day__body').css('display', 'flex');
 	}
 
 	if (getDate().timeInSeconds <= lessonTime.inSeconds[getLessonAmount(217, getDate().dayIndex, getWeekIndexParity().weekParity)].end) {
-		$('#nav-h_217-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
-		$('#nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
-		$('#nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__body').css('display', 'flex');
+		$('#nav-v_schedule-target').find('.nav-h_217-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-v_schedule-target').find('.nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-v_schedule-target').find('.nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__body').css('display', 'flex');
 	} else {
-		$('#nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
-		$('#nav-h_217-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
-		$('#nav-h_217-target').find(`.day_${nextDay}`).find('.day__body').css('display', 'flex');
+		$('#nav-v_schedule-target').find('.nav-h_217-target').find(`.day_${getDate().dayIndex}`).find('.day__title').addClass('current');
+		$('#nav-v_schedule-target').find('.nav-h_217-target').find(`.day_${nextDay}`).find('.day__title').addClass('next');
+		$('#nav-v_schedule-target').find('.nav-h_217-target').find(`.day_${nextDay}`).find('.day__body').css('display', 'flex');
 	}
 
 	let toRepeat = 86403 - getDate().timeInSeconds;

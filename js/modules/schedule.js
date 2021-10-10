@@ -547,7 +547,8 @@ export const breakTime = {
 
 
 export function initSchedule(group) {
-	let groupSchedule = $(`#nav-h_${group}-target`);
+	// let groupSchedule = $(`#nav-h_${group}-target`);
+	let groupSchedule = $(`#nav-v_schedule-target`).find(`.nav-h_${group}-target`);
 	for (let i = 1; i <= 6; i++) {
 		createDaySchedule(group, i, groupSchedule);
 	}

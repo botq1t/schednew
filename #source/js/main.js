@@ -28,6 +28,7 @@ setLessonCountdown();
 $('.nav-v__tab').click(function () {
 	if ($(this).hasClass('active')) return;
 	let id = $(this).attr('id');
+	console.log(id);
 
 	$('.nav-v__tab').removeClass('active');
 	$(this).addClass('active');
@@ -49,8 +50,9 @@ $('.nav-h__tab').click(function () {
 
 	// $('.main__schedule').children().not('.header__parity').css('display', 'none');
 	$('.main__schedule').children().css('display', 'none');
+	$('.main__hours').children().css('display', 'none');
 	// $(`#${id}-target`).css('display', 'flex');
-	$(`#${id}-target`).fadeIn(300, function () {
+	$(`.${id}-target`).fadeIn(300, function () {
 		$(this).css('display', 'flex');
 	});
 });
@@ -92,6 +94,3 @@ $('.day__title').click(function () {
 document.getElementById('nav-h_117').click();
 document.getElementById('nav-v_schedule').click();
 
-import { getLessonIndex, getBigBreakIndex } from './modules/schedule.js';
-
-console.log(getLessonIndex());

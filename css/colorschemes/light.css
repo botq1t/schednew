@@ -72,6 +72,8 @@
 .day__title {
   background-color: #112b66;
   color: white;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 .day__title.current {
   background-color: #ff6978;
@@ -80,6 +82,10 @@
   background-color: #6d435a;
 }
 
+.lesson {
+  -webkit-box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+}
 .lesson_lection {
   background-color: rgba(0, 255, 0, 0.2);
 }
@@ -88,6 +94,21 @@
 }
 .lesson_none {
   background-color: rgba(0, 255, 234, 0.2);
+}
+
+.hours__item {
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+.hours__title {
+  background-color: #112b66;
+  color: white;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.hours__row {
+  -webkit-box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
 }
 
 .footer {
@@ -183,6 +204,8 @@
     background-color: #891a1e;
     text-shadow: 0 0 2px black;
     color: white;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+            box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   }
   .day__title.current {
     background-color: #4d6a39;
@@ -191,6 +214,10 @@
     background-color: #303636;
   }
 
+  .lesson {
+    -webkit-box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+            box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
+  }
   .lesson_lection {
     background-color: #161b33;
   }

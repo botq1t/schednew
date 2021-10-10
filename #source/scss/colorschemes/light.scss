@@ -83,6 +83,7 @@ $odd-color: rgb(143, 98, 217);
 	&__title {
 		background-color: $accent-color;
 		color: white;
+		box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 		&.current {
 			// background-color: rgb(19, 160, 0);
 			// background-color: rgb(91, 209, 215);
@@ -97,6 +98,7 @@ $odd-color: rgb(143, 98, 217);
 }
 
 .lesson {
+	box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
 	&_lection {
 		background-color: rgba(0, 255, 0, 0.2);
 	}
@@ -108,6 +110,21 @@ $odd-color: rgb(143, 98, 217);
 	&_none {
 		background-color: rgba(0, 255, 234, 0.2);
 		// background-color: #ea7070;
+	}
+}
+
+.hours {
+	&__item {
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+	}
+	&__title {
+		background-color: $accent-color;
+		color: white;
+		box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+	}
+
+	&__row {
+		box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
 	}
 }
 
@@ -218,6 +235,7 @@ $dark-odd-color: #351431;
 			background-color: $dark-accent-color;
 			text-shadow: 0 0 2px black;
 			color: white;
+			box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 			&.current {
 				// background-color: #ff6978;
 				background-color: #4d6a39;
@@ -234,6 +252,7 @@ $dark-odd-color: #351431;
 	}
 
 	.lesson {
+		box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
 		&_lection {
 			// background-color: rgba(0, 255, 0, 0.2);
 			// background-color: #4c5b61;
