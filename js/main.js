@@ -3,7 +3,6 @@
 import { setMainMaxHeight } from './modules/init.js';
 import { initSchedule } from './modules/schedule.js';
 
-setMainMaxHeight();
 $(window).resize(setMainMaxHeight);
 initSchedule(117);
 initSchedule(217);
@@ -33,9 +32,10 @@ $('.nav-v__tab').click(function () {
 	$('.nav-v__tab').removeClass('active');
 	$(this).addClass('active');
 
-	$('.main__content').children().css('display', 'none');
+	// $('.main__content').children().css('display', 'none');
+	$('.main__content').children().fadeOut(150);
 	// $(`#${id}-target`).css('display', 'flex');
-	$(`#${id}-target`).fadeIn(300, function () {
+	$(`#${id}-target`).delay(155).fadeIn(300, function () {
 		$(this).css('display', 'flex');
 	});
 });
@@ -48,11 +48,10 @@ $('.nav-h__tab').click(function () {
 	$('.nav-h__tab').removeClass('active');
 	$(this).addClass('active');
 
-	// $('.main__schedule').children().not('.header__parity').css('display', 'none');
-	$('.main__schedule').children().css('display', 'none');
-	$('.main__hours').children().css('display', 'none');
-	// $(`#${id}-target`).css('display', 'flex');
-	$(`.${id}-target`).fadeIn(300, function () {
+
+	$('.main__schedule').children().fadeOut(150);
+	$('.main__hours').children().fadeOut(150);
+	$(`.${id}-target`).delay(155).fadeIn(300, function () {
 		$(this).css('display', 'flex');
 	});
 });
@@ -96,3 +95,4 @@ $('.day__title').click(function () {
 document.getElementById('nav-h_117').click();
 document.getElementById('nav-v_schedule').click();
 
+setMainMaxHeight();
