@@ -89,6 +89,8 @@ $('.day__title').click(function () {
 			$(this).next().slideUp(300);
 			break;
 	}
+
+	setMainMaxHeight();
 });
 
 document.getElementById('nav-h_117').click();
