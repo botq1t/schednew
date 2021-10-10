@@ -104,6 +104,7 @@ $maxWidth: 768;
 	transition: transform 300ms ease 0s;
 
 	&__toggler {
+		cursor: pointer;
 		z-index: 10;
 		position: absolute;
 		right: 30px;
