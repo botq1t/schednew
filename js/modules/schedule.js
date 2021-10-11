@@ -1,4 +1,6 @@
 import { dayName } from './constants.js';
+import { getDate } from './date.js';
+import { getWeekIndexParity, getTimeStringFromSeconds } from './date.js';
 
 export const lessons = {
 	117: {
@@ -509,12 +511,14 @@ export const lessonTime = {
 export const breakTime = {
 	big: {
 		string: {
+			0: { 'begin': '00:00', 'end': '00:00' },
 			1: { 'begin': '09:35', 'end': '09:50' },
 			2: { 'begin': '11:25', 'end': '11:40' },
 			3: { 'begin': '13:15', 'end': '14:00' },
 		},
 
 		inSeconds: {
+			0: { 'begin': 0, 'end': 0 },
 			1: { 'begin': 34500, 'end': 35400 },
 			2: { 'begin': 41100, 'end': 42000 },
 			3: { 'begin': 47700, 'end': 50400 },
@@ -523,6 +527,7 @@ export const breakTime = {
 
 	little: {
 		string: {
+			0: { 'begin': '00:00', 'end': '00:00' },
 			1: { 'begin': '08:45', 'end': '08:50' },
 			2: { 'begin': '10:35', 'end': '10:40' },
 			3: { 'begin': '11:25', 'end': '11:30' },
@@ -530,6 +535,7 @@ export const breakTime = {
 		},
 
 		inSeconds: {
+			0: { 'begin': 0, 'end': 0 },
 			1: { 'begin': '08:45', 'end': '08:50' },
 			2: { 'begin': '10:35', 'end': '10:40' },
 			3: { 'begin': '11:25', 'end': '11:30' },
@@ -586,8 +592,14 @@ function addLesson(lesson, daySchedule) {
 	}
 
 	lessonOutput.append(`<div class="lesson__item lesson__name">${lesson.name}</div>`);
-	lessonOutput.append(`<div class="lesson__item lesson__type">${lesson.type}</div>`);
-	lessonOutput.append(`<div class="lesson__item lesson__location">${lesson.location}</div>`);
+	lessonOutput.append(`
+		<div class="lesson__item lesson__info">
+			<div class="lesson__info-item lesson__type">${lesson.type}</div>
+			<div class="lesson__info-item lesson__location">${lesson.location}</div>
+		</div>
+	`);
+	// lessonOutput.append(`<div class="lesson__item lesson__type">${lesson.type}</div>`);
+	// lessonOutput.append(`<div class="lesson__item lesson__location">${lesson.location}</div>`);
 	lessonOutput.append(`<div class="lesson__item lesson__teacher">${lesson.teacher}</div>`);
 
 	switch (lesson.type) {
@@ -602,7 +614,7 @@ function addLesson(lesson, daySchedule) {
 
 
 
-export function getLessonAmount(group, day, parity) {
+export function getLessonAmount(group, day = getDate().dayIndex, parity = getWeekIndexParity().weekParity) {
 	let lessonAmount = 0;
 	for (let j in lessons[group][day]) {
 		if (j == 'lessons') {
@@ -614,4 +626,107 @@ export function getLessonAmount(group, day, parity) {
 		}
 	}
 	return lessonAmount;
+}
+
+export function getLessonIndex() {
+	let currentTime = getDate().timeInSeconds;
+	if (currentTime < lessonTime.inSeconds[1].begin) return "before";
+	if (currentTime >= lessonTime.inSeconds[4].end) return "after";
+
+	for (let i in lessonTime.inSeconds) {
+		if (i == 0) continue;
+		if (currentTime >= lessonTime.inSeconds[i].begin && currentTime < lessonTime.inSeconds[i].end) return Number(i);
+	}
+
+	return `break ${getBigBreakIndex()}`;
+}
+
+export function getBigBreakIndex() {
+	let currentTime = getDate().timeInSeconds;
+	if (currentTime < lessonTime.inSeconds[1].begin) return "before";
+	if (currentTime >= lessonTime.inSeconds[4].end) return "after";
+
+	for (let i in breakTime.big.inSeconds) {
+		if (i == 0) continue;
+		if (currentTime >= breakTime.big.inSeconds[i].begin && currentTime < breakTime.big.inSeconds[i].end) return Number(i);
+	}
+
+	return `lesson ${getLessonIndex()}`;
+}
+
+export function highLightCurrentLesson() {
+	let currentTime = getDate().timeInSeconds;
+	let lessonIndex = getLessonIndex();
+
+	if (lessonIndex == 'after') {
+		$('.lesson').removeClass('current').removeClass('next');
+		let toRepeat = 86400 - currentTime + 1;
+		toRepeat *= 1000;
+		setTimeout(highLightCurrentLesson, toRepeat);
+		return;
+	}
+	if (lessonIndex == 'before') {
+		$('.lesson').removeClass('current').removeClass('next');
+		let toRepeat = lessonTime.inSeconds[1].begin - currentTime + 1;
+		toRepeat *= 1000;
+		setTimeout(highLightCurrentLesson, toRepeat);
+		return;
+	}
+
+	if ((typeof lessonIndex) == 'number') {
+		$('.lesson').removeClass('next');
+		$(`.day_${getDate().dayIndex}`).find(`.lesson_${getLessonIndex()}`).addClass('current');
+
+		let toRepeat = lessonTime.inSeconds[lessonIndex].end - currentTime + 1;
+		toRepeat *= 1000;
+		setTimeout(highLightCurrentLesson, toRepeat);
+	} else {
+		$('.lesson').removeClass('current');
+		$(`.day_${getDate().dayIndex}`).find(`.lesson_${getBigBreakIndex() + 1}`).addClass('next');
+
+		let toRepeat = breakTime.big.inSeconds[getBigBreakIndex()].end - currentTime + 1;
+		toRepeat *= 1000;
+		setTimeout(highLightCurrentLesson, toRepeat);
+	}
+}
+
+export function setLessonCountdown() {
+	let currentTime = getDate().timeInSeconds;
+	let lessonIndex = getLessonIndex();
+
+	if (lessonIndex == 'after') {
+		$('.remain').css('display', 'none');
+		let toRepeat = 86400 - currentTime + 1;
+		toRepeat *= 1000;
+		setTimeout(setLessonCountdown, toRepeat);
+		return;
+	}
+	if (lessonIndex == 'before') {
+		$('.remain').css('display', 'none');
+		let toRepeat = lessonTime.inSeconds[1].begin - currentTime + 1;
+		toRepeat *= 1000;
+		setTimeout(setLessonCountdown, toRepeat);
+		return;
+	}
+
+	if ((typeof lessonIndex) == 'number') {
+		$('.remain').css('display', 'flex');
+
+		$('.remain__time').html(`Пара №${lessonIndex}`);
+		let countdown = lessonTime.inSeconds[lessonIndex].end - currentTime;
+		// $('.remain__countdown').html(`До конца: ${getTimeStringFromSeconds(countdown)}`);
+		$('.remain__countdown').html(getTimeStringFromSeconds(countdown));
+
+		setTimeout(setLessonCountdown, 1000);
+	} else {
+		$('.remain').css('display', 'flex');
+
+		$('.remain__time').html(`Перерыв`);
+		let countdown = breakTime.big.inSeconds[getBigBreakIndex()].end - currentTime;
+		// $('.remain__countdown').html(`До начала пары: ${getTimeStringFromSeconds(countdown)}`);
+		$('.remain__countdown').html(getTimeStringFromSeconds(countdown));
+
+
+		setTimeout(setLessonCountdown, 1000);
+	}
 }

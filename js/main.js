@@ -4,6 +4,7 @@ import { setMainMaxHeight } from './modules/init.js';
 import { initSchedule } from './modules/schedule.js';
 
 setMainMaxHeight();
+$(window).resize(setMainMaxHeight);
 initSchedule(117);
 initSchedule(217);
 
@@ -13,32 +14,45 @@ import { setInfoRemain } from './modules/date.js';
 import { setInfoWeekDay } from './modules/date.js';
 import { initParity } from './modules/date.js';
 import { initCurrentDay } from './modules/date.js';
+import { highLightCurrentLesson } from './modules/schedule.js';
+import { setLessonCountdown } from './modules/schedule.js';
 
 setInfoTime();
 setInfoRemain();
 setInfoWeekDay();
 initParity();
 initCurrentDay();
+highLightCurrentLesson();
+setLessonCountdown();
 
 $('.nav-v__tab').click(function () {
+	if ($(this).hasClass('active')) return;
 	let id = $(this).attr('id');
 
 	$('.nav-v__tab').removeClass('active');
 	$(this).addClass('active');
 
 	$('.main__content').children().css('display', 'none');
-	$(`#${id}-target`).css('display', 'flex');
+	// $(`#${id}-target`).css('display', 'flex');
+	$(`#${id}-target`).fadeIn(300, function () {
+		$(this).css('display', 'flex');
+	});
 });
 
 $('.nav-h__tab').click(function () {
+	if ($(this).hasClass('active')) return;
 	let id = $(this).attr('id');
 	// console.log(id);
 
 	$('.nav-h__tab').removeClass('active');
 	$(this).addClass('active');
 
-	$('.main__schedule').children().not('.header__parity').css('display', 'none');
-	$(`#${id}-target`).css('display', 'flex');
+	// $('.main__schedule').children().not('.header__parity').css('display', 'none');
+	$('.main__schedule').children().css('display', 'none');
+	// $(`#${id}-target`).css('display', 'flex');
+	$(`#${id}-target`).fadeIn(300, function () {
+		$(this).css('display', 'flex');
+	});
 });
 
 $('.info__toggler').click(function () {
@@ -77,3 +91,7 @@ $('.day__title').click(function () {
 
 document.getElementById('nav-h_117').click();
 document.getElementById('nav-v_schedule').click();
+
+import { getLessonIndex, getBigBreakIndex } from './modules/schedule.js';
+
+console.log(getLessonIndex());

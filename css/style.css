@@ -445,13 +445,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lesson {
+  position: relative;
   -webkit-box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
           box-shadow: 0px -5px 2px -5px rgba(34, 60, 80, 0.6) inset;
   padding: 5px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 13% auto 8% 13% 32%;
-  grid-template-columns: 13% auto 8% 13% 32%;
+  -ms-grid-columns: 13% auto 13% 32%;
+  grid-template-columns: 13% auto 13% 32%;
   grid-auto-flow: column;
   grid-auto-rows: auto;
 }
@@ -460,10 +461,32 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.lesson.current::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: 0;
+  top: 0;
+  background-color: red;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.lesson.next::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: 0;
+  top: 0;
+  background-color: #ff9100;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
 .lesson__none {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2/6;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
 }
 .lesson__item {
   font-size: calc(13px + 5 * ((100vw - 320px) / 448));
@@ -488,6 +511,28 @@ h1, h2, h3, h4, h5, h6 {
 .lesson__begin {
   margin: 0px 0px 3px 0px;
 }
+.lesson__name {
+  font-style: italic;
+}
+.lesson__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.lesson__type {
+  margin: 0px 0px 3px 0px;
+}
+.lesson__location {
+  font-weight: 700;
+}
+.lesson__teacher {
+  font-style: italic;
+}
+
 .footer {
   position: relative;
   -webkit-box-flex: 0;

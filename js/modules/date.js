@@ -7,7 +7,7 @@ export function getDate() {
 	let output = {}
 
 	output.date = new Date();
-	// output.date = new Date(1633774816000);
+	// output.date = new Date(1633934090000);
 	output.dayIndex = output.date.getDay();
 	output.timeInSeconds = (output.date.getHours() * 3600) + (output.date.getMinutes() * 60) + (output.date.getSeconds());
 	return output;
@@ -44,6 +44,7 @@ export function setInfoWeekDay() {
 	$('.info__week').html(`Неделя №${weekIndex} (${day})`);
 
 	let toRepeat = 86403 - getDate().timeInSeconds;
+	toRepeat *= 1000;
 	setTimeout(setInfoWeekDay, toRepeat);
 }
 
@@ -79,6 +80,7 @@ export function initParity() {
 
 	setMainMaxHeight();
 	let toRepeat = 86403 - getDate().timeInSeconds;
+	toRepeat *= 1000;
 	setTimeout(setInfoWeekDay, toRepeat);
 }
 
@@ -138,6 +140,7 @@ export function initCurrentDay() {
 	}
 
 	let toRepeat = 86403 - getDate().timeInSeconds;
+	toRepeat *= 1000;
 	setTimeout(setInfoWeekDay, toRepeat);
 }
 
@@ -151,7 +154,7 @@ function getWeekparity(weekIndex) {
 }
 
 
-function getTimeStringFromSeconds(time) {
+export function getTimeStringFromSeconds(time) {
 	let timeString = '';
 
 	if (getHMSFromSeconds(time).hours < 10) timeString += '0';
