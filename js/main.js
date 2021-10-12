@@ -1,5 +1,9 @@
 "use strict"
 
+let tabReady = {
+	horizontal: false,
+	vertical: false,
+}
 import {
 	setMainMaxHeight
 } from './modules/init.js';
@@ -56,6 +60,8 @@ $('.nav-v__tab').click(function () {
 });
 
 $('.nav-h__tab').click(function () {
+	/*if (tabReady.horizontal) return;
+	tabReady.horizontal = true;*/
 	if ($(this).hasClass('active')) return;
 	let id = $(this).attr('id');
 	// console.log(id);
@@ -69,6 +75,10 @@ $('.nav-h__tab').click(function () {
 	$(`.${id}-target`).delay(155).fadeIn(300, function () {
 		$(this).css('display', 'flex');
 	});
+
+	/*setTimeout(() => {
+		tabReady.horizontal = false;
+	}, 1000);*/
 });
 
 $('.info__toggler').click(function () {

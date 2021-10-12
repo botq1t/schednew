@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   text-align: center;
   padding: 5px 10px;
-  font-size: calc(25px + 0 * ((100vw - 320px) / 448));
+  font-size: calc(23px + 2 * ((100vw - 320px) / 448));
   font-weight: 700;
   -webkit-transition: all 300ms ease 0s;
   transition: all 300ms ease 0s;

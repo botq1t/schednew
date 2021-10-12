@@ -63,7 +63,7 @@ $maxWidth: 768;
 		border-radius: 10px;
 		text-align: center;
 		padding: 5px 10px;
-		@include adaptiv-font(25, 25);
+		@include adaptiv-font(25, 23);
 		font-weight: 700;
 		transition: all 300ms ease 0s;
 	}
