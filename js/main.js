@@ -8,13 +8,18 @@ initSchedule(117);
 initSchedule(217);
 
 // ! ================= Time ==========================
-import { setInfoTime } from './modules/date.js';
-import { setInfoRemain } from './modules/date.js';
-import { setInfoWeekDay } from './modules/date.js';
-import { initParity } from './modules/date.js';
-import { initCurrentDay } from './modules/date.js';
-import { highLightCurrentLesson } from './modules/schedule.js';
-import { setLessonCountdown } from './modules/schedule.js';
+import {
+	setInfoTime,
+	setInfoRemain,
+	setInfoWeekDay,
+	initParity,
+	initCurrentDay,
+} from './modules/date.js';
+
+import {
+	highLightCurrentLesson,
+	setLessonCountdown,
+} from './modules/schedule.js';
 
 setInfoTime();
 setInfoRemain();
@@ -96,3 +101,8 @@ document.getElementById('nav-h_117').click();
 document.getElementById('nav-v_schedule').click();
 
 setMainMaxHeight();
+
+import { initHours } from './modules/hours/hoursCreation.js';
+
+initHours(117);
+initHours(217);

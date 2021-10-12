@@ -228,6 +228,21 @@
     background-color: #4c5b61;
   }
 
+  .hours__item {
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+  }
+  .hours__title {
+    background-color: #891a1e;
+    color: white;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+            box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  }
+  .hours__row {
+    -webkit-box-shadow: 0px -5px 4px -5px #891a1e inset;
+            box-shadow: 0px -5px 4px -5px #891a1e inset;
+  }
+
   .footer {
     background-color: #891a1e;
   }

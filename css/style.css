@@ -555,9 +555,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 15px 0px;
   border-radius: 5px;
 }
-.hours__item:last-child {
-  margin: 0;
-}
 .hours__title {
   position: relative;
   border-top-left-radius: 5px;
