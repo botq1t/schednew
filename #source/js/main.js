@@ -1,7 +1,17 @@
 "use strict"
 
-import { setMainMaxHeight } from './modules/init.js';
-import { initSchedule } from './modules/schedule.js';
+import {
+	setMainMaxHeight
+} from './modules/init.js';
+import {
+	initSchedule
+} from './modules/schedule.js';
+import {
+	initSettings,
+	readSettings,
+} from './modules/settings/settings.js';
+
+initSettings(settings);
 
 $(window).resize(setMainMaxHeight);
 initSchedule(117);
@@ -74,6 +84,8 @@ $('.header__parity').click(function () {
 	changeParity(weekParity);
 });
 
+$('.settings__accept').on('click', readSettings);
+
 $('.day__title').click(function () {
 	/*let group = $(this).parent().parent().attr('id');
 	group = group.split('_')[1];
@@ -97,7 +109,7 @@ $('.day__title').click(function () {
 	setMainMaxHeight();
 });
 
-document.getElementById('nav-h_117').click();
+document.getElementById(`nav-h_${settings.group}`).click();
 document.getElementById('nav-v_schedule').click();
 
 setMainMaxHeight();
