@@ -4,7 +4,7 @@ export function initSettings(settings) {
 	$('.settings__value').each(function () {
 		let name = $(this).attr('name');
 		let value = String(settings[name]);
-		console.log(value);
+		// console.log(value);
 
 		$(this).children('option').each(function () {
 			// console.log($(this).parent().attr('name'));

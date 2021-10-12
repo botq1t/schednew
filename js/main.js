@@ -42,7 +42,7 @@ setLessonCountdown();
 $('.nav-v__tab').click(function () {
 	if ($(this).hasClass('active')) return;
 	let id = $(this).attr('id');
-	console.log(id);
+	// console.log(id);
 
 	$('.nav-v__tab').removeClass('active');
 	$(this).addClass('active');
