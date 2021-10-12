@@ -256,6 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 300ms ease 0s, -webkit-transform 300ms ease 0s;
 }
 .info__toggler {
+  opacity: 0.6;
   cursor: pointer;
   z-index: 10;
   position: absolute;
@@ -286,6 +287,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
   right: 22%;
+}
+.info__toggler.active {
+  opacity: 1;
 }
 .info__toggler.active::before {
   -webkit-transform: translateY(-50%) rotate(-45deg);
