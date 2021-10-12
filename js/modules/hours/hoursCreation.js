@@ -14,7 +14,7 @@ import {
 	corrections
 } from './database.js';
 
-const hoursOrder = {
+/*const hoursOrder = {
 	'АИП и ЧФ': 1,
 	'АП и ПНК': 2,
 	'МОМАН': 3,
@@ -23,7 +23,18 @@ const hoursOrder = {
 	'ПП и ТОВД': 6,
 	'ФРО на АЯ': 7,
 	'ЭО': 8,
-}
+}*/
+
+const hoursOrder = [
+	'АИП и ЧФ',
+	'АП и ПНК',
+	'МОМАН',
+	'ОПВД',
+	'ПАП при ОВД',
+	'ПП и ТОВД',
+	'ФРО на АЯ',
+	'ЭО',
+]
 
 export function initHours(group) {
 	let hours = getHours(group);
@@ -32,7 +43,7 @@ export function initHours(group) {
 	// console.log(hoursContainer);
 	hoursContainer.empty();
 
-	for (let name in hours.passed) {
+	/*for (let name in hours.passed) {
 		hoursContainer.append(`
 		<div class="hours__item">
 			<h2 class="hours__title">${name}</h2>
@@ -60,6 +71,34 @@ export function initHours(group) {
 		`);
 
 		hoursContainer.children().last().css(`order`, `${hoursOrder[name]}`);
+	}*/
+
+	for (let name of hoursOrder) {
+		hoursContainer.append(`
+		<div class="hours__item">
+			<h2 class="hours__title">${name}</h2>
+			<main class="hours__body">
+				<div class="hours__row hours__description">
+					<div class="hours__column hours__none"></div>
+					<div class="hours__column hours__passed">Прошло</div>
+					<div class="hours__column hours__remain">Осталось</div>
+					<div class="hours__column hours__total">Всего</div>
+				</div>
+				<div class="hours__row hours__lection">
+					<div class="hours__column hours__type">ЛК</div>
+					<div class="hours__column hours__passed">${hours.passed[name].lection}</div>
+					<div class="hours__column hours__remain">${hours.remain[name].lection}</div>
+					<div class="hours__column hours__total">${hours.total[name].lection}</div>
+				</div>
+				<div class="hours__row hours__practice">
+					<div class="hours__column hours__type">ПЗ</div>
+					<div class="hours__column hours__passed">${hours.passed[name].practice}</div>
+					<div class="hours__column hours__remain">${hours.remain[name].practice}</div>
+					<div class="hours__column hours__total">${hours.total[name].practice}</div>
+				</div>
+			</main>
+		</div>
+		`);
 	}
 }
 
