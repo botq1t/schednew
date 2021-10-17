@@ -7,7 +7,7 @@ export function getDate() {
 	let output = {}
 
 	output.date = new Date();
-	// output.date = new Date(1634107800000);
+	// output.date = new Date(1635831400000);
 	output.dayIndex = output.date.getDay();
 	output.timeInSeconds = (output.date.getHours() * 3600) + (output.date.getMinutes() * 60) + (output.date.getSeconds());
 	return output;

@@ -14,12 +14,22 @@ import {
 	initSettings,
 	readSettings,
 } from './modules/settings/settings.js';
+import {
+	displayBirthDay
+} from './modules/birth.js';
+import {
+	initSounds
+} from './modules/sounds.js';
 
 initSettings(settings);
+displayBirthDay();
 
 $(window).resize(setMainMaxHeight);
 initSchedule(117);
 initSchedule(217);
+if (settings.isSounds) {
+	initSounds();
+}
 
 // ! ================= Time ==========================
 import {

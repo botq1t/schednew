@@ -47,6 +47,8 @@ $maxWidth: 768;
 	}
 
 	&__title {
+		display: flex;
+		align-items: center;
 		font-family: "Lobster", cursive;
 		text-align: center;
 		// font-weight: 700;
