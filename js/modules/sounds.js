@@ -128,6 +128,8 @@ export function initSounds() {
 
 	$('.day__title').on('click', function () {
 		let key = $(this).text();
+		if (key != 'Суббота') return;
+
 		playSound(key);
 	});
 
