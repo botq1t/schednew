@@ -5,7 +5,8 @@ import {
 const dates = {
 	'1.3': 'Matvey',
 	'1.10': 'Tanya',
-	'3.10': 'Arthur',
+	'2.23': 'Nastya',
+  '3.10': 'Arthur',
 	'3.12': 'Alexdandra',
 	'3.20': 'Ivetta',
 	'3.22': 'Ivgenia',
@@ -29,7 +30,7 @@ export function displayBirthDay() {
 	let day = getDate().date.getDate();
 	let month = getDate().date.getMonth() + 1;
 	let checker = `${month}.${day}`;
-	console.log(checker);
+	//console.log(checker);
 
 	let title = $('.header__title');
 	if (dates[checker]) {
