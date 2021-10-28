@@ -22,13 +22,13 @@ export const corrections = {
 	},
 
 	217: {
-		'АИП и ЧФ': { 'lection': -2, 'practice': -2 },
+		'АИП и ЧФ': { 'lection': -2, 'practice': -1 },
 		'АП и ПНК': { 'lection': 3, 'practice': -3 },
 		'МОМАН': { 'lection': 0, 'practice': 0 },
-		'ОПВД': { 'lection': 0, 'practice': -1 },
+		'ОПВД': { 'lection': -1, 'practice': -1 },
 		'ПАП при ОВД': { 'lection': 0, 'practice': 0 },
-		'ПП и ТОВД': { 'lection': 4, 'practice': -5 },
-		'ФРО на АЯ': { 'lection': 0, 'practice': -1 },
+		'ПП и ТОВД': { 'lection': 5, 'practice': -7 },
+		'ФРО на АЯ': { 'lection': 0, 'practice': 0 },
 		'ЭО': { 'lection': 0, 'practice': -2 },
 	},
 }
