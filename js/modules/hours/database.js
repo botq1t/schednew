@@ -18,7 +18,7 @@ export const corrections = {
 		'ПАП при ОВД': { 'lection': 1, 'practice': 10 },
 		'ПП и ТОВД': { 'lection': 4, 'practice': -6 },
 		'ФРО на АЯ': { 'lection': 0, 'practice': -1 },
-		'ЭО': { 'lection': 0, 'practice': -2 },
+		'ЭО': { 'lection': 0, 'practice': -1 },
 	},
 
 	217: {
