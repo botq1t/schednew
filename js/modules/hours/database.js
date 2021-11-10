@@ -25,7 +25,7 @@ export const corrections = {
 		'АИП и ЧФ': { 'lection': -2, 'practice': -1 },
 		'АП и ПНК': { 'lection': 3, 'practice': -3 },
 		'МОМАН': { 'lection': 0, 'practice': 0 },
-		'ОПВД': { 'lection': -1, 'practice': -1 },
+		'ОПВД': { 'lection': -1, 'practice': -11 },
 		'ПАП при ОВД': { 'lection': 0, 'practice': 10 },
 		'ПП и ТОВД': { 'lection': 5, 'practice': -7 },
 		'ФРО на АЯ': { 'lection': 0, 'practice': 0 },

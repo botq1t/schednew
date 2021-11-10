@@ -342,10 +342,10 @@ export const lessons = {
 			3: {
 				'index': 3,
 				'parity': 'both',
-				'name': null,
-				'type': null,
-				'location': null,
-				'teacher': null
+				'name': 'ОПВД',
+				'type': 'ПЗ',
+				'location': 'xxxx',
+				'teacher': 'Вишневский Р. А.'
 			},
 			4: {
 				'index': 4,
