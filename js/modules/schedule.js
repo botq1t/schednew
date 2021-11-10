@@ -24,10 +24,10 @@ export const lessons = {
 			2: {
 				'index': 2,
 				'parity': 'both',
-				'name': 'ПАП при ОВД',
-				'type': 'ПЗ',
-				'location': '3204',
-				'teacher': 'Александров О.В.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 			3: {
 				'index': 3,
@@ -179,10 +179,10 @@ export const lessons = {
 			3: {
 				'index': 2,
 				'parity': 'even',
-				'name': 'МОМАН',
-				'type': 'ПЗ',
-				'location': '3203',
-				'teacher': 'Барабан И.И.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 			4: {
 				'index': 3,
