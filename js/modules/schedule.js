@@ -344,7 +344,7 @@ export const lessons = {
 				'parity': 'both',
 				'name': 'ОПВД',
 				'type': 'ПЗ',
-				'location': 'xxxx',
+				'location': '3203',
 				'teacher': 'Вишневский Р. А.'
 			},
 			4: {
