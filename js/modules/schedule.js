@@ -115,10 +115,10 @@ export const lessons = {
 			1: {
 				'index': 1,
 				'parity': 'odd',
-				'name': 'МОМАН',
-				'type': 'ЛК',
-				'location': '3204',
-				'teacher': 'Барабан И.И.',
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null,
 			},
 
 			2: {

@@ -142,6 +142,10 @@ function getPassedHours(group) {
 	// console.log(corrections);
 
 	for (let key in corrections[group]) {
+		if (!passedHours[key]) passedHours[key] = {
+			'lection': 0,
+			'practice': 0
+		}
 		passedHours[key].lection += corrections[group][key].lection;
 		passedHours[key].practice += corrections[group][key].practice;
 	}
