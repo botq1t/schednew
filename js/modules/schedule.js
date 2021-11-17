@@ -117,8 +117,8 @@ export const lessons = {
 				'parity': 'odd',
 				'name': 'МОМАН',
 				'type': 'ЛК',
-				'location': '3203',
-				'teacher': 'Барабан И.И.'
+				'location': '3204',
+				'teacher': 'Барабан И.И.',
 			},
 
 			2: {
