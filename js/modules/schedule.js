@@ -32,10 +32,10 @@ export const lessons = {
 			3: {
 				'index': 3,
 				'parity': 'both',
-				'name': 'ПП и ТОВД',
-				'type': 'ЛК',
-				'location': '3203',
-				'teacher': 'Дубовский А.В.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 			4: {
 				'index': 4,
@@ -97,15 +97,6 @@ export const lessons = {
 				'type': 'ПЗ',
 				'location': '1305',
 				'teacher': 'Лазовский Г.Б.'
-			},
-
-			3: {
-				'index': 3,
-				'parity': 'both',
-				'name': 'ПП и ТОВД',
-				'type': 'ПЗ',
-				'location': '3204',
-				'teacher': 'Дубовский А.В.'
 			},
 		},
 
@@ -187,10 +178,10 @@ export const lessons = {
 			4: {
 				'index': 3,
 				'parity': 'both',
-				'name': 'ПП и ТОВД',
-				'type': 'ПЗ',
-				'location': '3203',
-				'teacher': 'Дубовский А.В.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 			5: {
 				'index': 4,
