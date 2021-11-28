@@ -260,14 +260,6 @@ export const lessons = {
 				'location': '1305, 1307',
 				'teacher': 'Лазовский Г.Б., Швайко Е. П.'
 			},
-			3: {
-				'index': 3,
-				'parity': 'both',
-				'name': 'ПП и ТОВД',
-				'type': 'ЛК',
-				'location': '3203',
-				'teacher': 'Дубовский А.В.'
-			},
 		},
 
 		// ? Вторник
@@ -324,10 +316,10 @@ export const lessons = {
 			2: {
 				'index': 2,
 				'parity': 'both',
-				'name': 'ПП и ТОВД',
-				'type': 'ПЗ',
-				'location': '3204',
-				'teacher': 'Дубовский А.В.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 
 			3: {
@@ -354,10 +346,10 @@ export const lessons = {
 			1: {
 				'index': 1,
 				'parity': 'odd',
-				'name': 'МОМАН',
-				'type': 'ЛК',
-				'location': '3203',
-				'teacher': 'Барабан И.И.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 
 			2: {
@@ -410,10 +402,10 @@ export const lessons = {
 			2: {
 				'index': 1,
 				'parity': 'even',
-				'name': 'МОМАН',
-				'type': 'ПЗ',
-				'location': '3203',
-				'teacher': 'Барабан И.И.'
+				'name': null,
+				'type': null,
+				'location': null,
+				'teacher': null
 			},
 			3: {
 				'index': 2,
@@ -439,15 +431,6 @@ export const lessons = {
 				'location': null,
 				'teacher': null
 			},
-			6: {
-				'index': 4,
-				'parity': 'both',
-				'name': 'ПП и ТОВД',
-				'type': 'ПЗ',
-				'location': '3203',
-				'teacher': 'Дубовский А.В.'
-			},
-
 		},
 
 		// ? Суббота
