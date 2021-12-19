@@ -196,42 +196,7 @@ export const lessons = {
 
 		// ? Суббота
 		6: {
-			'lessons': true,
-			1: {
-				'index': 1,
-				'parity': 'both',
-				'name': null,
-				'type': null,
-				'location': null,
-				'teacher': null
-			},
-
-			2: {
-				'index': 2,
-				'parity': 'both',
-				'name': null,
-				'type': null,
-				'location': null,
-				'teacher': null
-			},
-
-			3: {
-				'index': 3,
-				'parity': 'both',
-				'name': 'АИП и ЧФ',
-				'type': 'ЛК',
-				'location': '3209',
-				'teacher': 'Худолей Е.В.'
-			},
-			4: {
-				'index': 4,
-				'parity': 'both',
-				'name': 'АИП и ЧФ',
-				'type': 'ПЗ',
-				'location': '3209',
-				'teacher': 'Худолей Е.В.'
-			},
-
+			'lessons': false,
 		},
 	},
 
@@ -435,32 +400,7 @@ export const lessons = {
 
 		// ? Суббота
 		6: {
-			'lessons': true,
-			1: {
-				'index': 1,
-				'parity': 'both',
-				'name': null,
-				'type': null,
-				'location': null,
-				'teacher': null
-			},
-			2: {
-				'index': 2,
-				'parity': 'both',
-				'name': 'АИП и ЧФ',
-				'type': 'ПЗ',
-				'location': '3209',
-				'teacher': 'Худолей Е.В.'
-			},
-			3: {
-				'index': 3,
-				'parity': 'both',
-				'name': 'АИП и ЧФ',
-				'type': 'ЛК',
-				'location': '3209',
-				'teacher': 'Худолей Е.В.'
-			},
-
+			'lessons': false,
 		},
 	},
 }

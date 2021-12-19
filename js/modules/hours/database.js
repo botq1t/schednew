@@ -11,7 +11,7 @@ export const totalHours = {
 
 export const corrections = {
 	117: {
-		'АИП и ЧФ': { 'lection': 0, 'practice': 0 },
+		'АИП и ЧФ': { 'lection': 17, 'practice': 13 },
 		'АП и ПНК': { 'lection': 3, 'practice': -3 },
 		'МОМАН': { 'lection': 11, 'practice': 7 },
 		'ОПВД': { 'lection': 1, 'practice': 0 },
@@ -22,7 +22,7 @@ export const corrections = {
 	},
 
 	217: {
-		'АИП и ЧФ': { 'lection': -2, 'practice': -1 },
+		'АИП и ЧФ': { 'lection': 17, 'practice': 13 },
 		'АП и ПНК': { 'lection': 3, 'practice': -4 },
 		'МОМАН': { 'lection': 11, 'practice': 7 },
 		'ОПВД': { 'lection': 0, 'practice': -11 },
