@@ -136,14 +136,6 @@ export const lessons = {
 				'location': '3203',
 				'teacher': 'Вишневский Р.А.'
 			},
-			5: {
-				'index': 3,
-				'parity': 'both',
-				'name': 'ПАП при ОВД',
-				'type': 'ЛК',
-				'location': '3204',
-				'teacher': 'Вишневский Р.А.'
-			},
 
 		},
 
@@ -339,14 +331,6 @@ export const lessons = {
 				'name': 'ОПВД',
 				'type': 'ЛК',
 				'location': '3203',
-				'teacher': 'Вишневский Р.А.'
-			},
-			5: {
-				'index': 3,
-				'parity': 'both',
-				'name': 'ПАП при ОВД',
-				'type': 'ЛК',
-				'location': '3204',
 				'teacher': 'Вишневский Р.А.'
 			},
 
